@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 10;
+}
+.border{
+    border: 1px solid black;
+}
+header{
+    grid-area: header;
+    width: 100%;
+    background-color: white;
+}
+main{
+    grid-area: main;
+    width: 100%;
+    background-color: lightskyblue;
+}
+footer{
+    grid-area: footer;
+    width: 100%;
+    background-color: white;  
+}
+.menu{
+    background: white;
+    display: flex;   
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 50px; 
+    }
+    .logo{
+        flex: 1 1 auto;
+        margin: 1cm ;
+    }
+    .nav_items{ 
+        flex: 5 1 auto;
+    }
+        .nav_items a{
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 0 10px;
+            color: black;
+            font-size: 10pt;
+            letter-spacing: 2px;
+        }
+        .nav_items a:hover{
+            color: dodgerblue;  
+        }
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.fotoBanner{
+    height: 100%;
+    width: auto;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;   
+}
+.whats_link{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 60px;
+    right: 40px;
+    z-index: 100;
+}
+.whats_icon{
+    margin-top: 16px;
+}   
+.titulo_exc{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 15pt;
+}
+.nombre_exc{
+    text-align: center;
+    font-weight: lighter;
+}
+.foto_exc{
+    margin: auto;
+    display: block;
+}
+.precio_exc{
+    text-align: center;
+    font-style: oblique;
+    font-weight: lighter;
+}
+.titulo_iframe{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 15pt;
+}
+.video_ush{
+        margin: auto;
+        display: block;
+}
+.exc_ush{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 15pt;
+}
+table, th, td{
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+}
+.experiencia{
+    text-align: center;
+}
+.campaña{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 15pt;    
+}
+.img_previaje{
+    margin: auto;
+    display: block;
+}
+.quienes_somos{
+    text-align: center;
+}
+.contenido_previaje{
+    text-align: center;
+}
+.contacto{
+    margin: 10pt;
+}
+.formulario{
+    margin: 10pt;
+}
+.tituloOficinas{
+    text-align: center;
+    text-decoration: underline;
+}
+.oficinas{
+    display: flex;
+    width: 100%;
+}
+    .ofiCard{
+        display: grid;
+        padding: 20px;
+        grid-template-columns: 1 fr 1fr 1fr;
+        position: relative;
+        left: 150px;
+    }
+li{
+    list-style: none;
+}
