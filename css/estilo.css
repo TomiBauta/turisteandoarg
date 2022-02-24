@@ -5,12 +5,18 @@
 .border{
     border: 1px solid black;
 }
+.contenedorPrincipal{
+    grid-template-areas:
+    "header"
+    "main"
+    "footer" ;
+}
 header{
     grid-area: header;
     width: 100%;
     background-color: white;
 }
-main{
+main{  
     grid-area: main;
     width: 100%;
     background-color: lightskyblue;
