@@ -18,14 +18,20 @@ footer{
 }
 .card{
     text-align: center;
-}
-.excDest{
-    text-decoration: underline;
-    text-align: center;
+    margin-left: 100px;
 }
 .iframe{
     text-align: center;
 }
 .titulo_iframe{
-    text-decoration: underline  ;
+    text-decoration: underline;
+    text-align: center;
 }
+.card-body{
+    background: linear-gradient(-90deg, lightblue, white);
+}
+.excDest h3{
+    text-decoration: underline;
+    text-align: center;
+}
+
