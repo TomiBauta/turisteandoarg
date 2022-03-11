@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+        .titulo_iframe{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .iframe{
+            text-align: center;
+        }
+        .card-body{
+            background: linear-gradient(-90deg, lightblue, white);
+        }
+        .excDest h3{
+            text-decoration: underline;
+            text-align: center;
+        }
+}
