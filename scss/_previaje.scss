@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.encabezadoPreviaje{
+    .campanaPreviaje{
+        text-align: center;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+    .img_previaje{
+        text-align: center;
+    }
+}
+.contenidoPreviaje{
+    text-align: center;
+        h4{
+            color: #177bd3;
+            font-weight: bolder;
+        }
+        ul{
+            li{
+                list-style-position: inside;
+            }
+        }
+}

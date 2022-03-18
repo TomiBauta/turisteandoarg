@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.mainExc{
+    display: grid;
+    grid-template-columns: 1fr repeat(12,minmax(auto,60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
+}
+.text--medium{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ecf0f1;
+}
+.cards{
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12,minmax(auto,60px));
+    grid-gap: 40px;
+}
+.tarjeta{
+    grid-column-end: span 4;
+    display: flex;
+    flex-direction: column;
+    background-color: #3da9e7;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.tarjeta:hover{
+    transform: translateY(-7px);
+}
+.tarjeta_img{
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+        img{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+}
+.card_content{
+    padding: 20px;
+}
+.card_titulo{
+    margin-bottom: 20px;
+}
+.card_info{
+    display: flex;
+    align-self: end;
+    align-items: center;
+    .card_precio{
+        margin-left: auto;
+        padding: 5px 20px;
+        background-color: #2f87b9;
+        border-radius: 20px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .tarjeta{
+        grid-column-end: span 6;
+    }
+}
+@media only screen and (max-width:700px){
+    .mainExc{
+        grid-gap: 20px;
+    }
+    .tarjeta{
+        grid-column-end: span 12;
+    }
+}
+@media only screen and (max-width:500px){
+    .mainExc{
+        grid-template-columns: 10px repeat(6, 1fr) 10px;
+        grid-gap: 10px;
+    }
+    .cards{
+        grid-column-end: 2 / span 6;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+    }
+    .tarjeta{
+        grid-column-end: span 6;
+    }
+}
+.tituloExc{
+    text-align: center;
+    text-decoration: underline;
+}

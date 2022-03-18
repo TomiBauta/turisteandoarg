@@ -8,8 +8,19 @@ body{
             text-align: center;
             text-decoration: underline;
         }
-        .iframe{
+        .videoYoutube{
+            overflow: hidden;
+            padding-bottom: 500px;
+            position: relative;
+            height: 50px;
             text-align: center;
+                iframe{
+                    left: 0;
+                    top: 0;
+                    height: 315;
+                    width: 560;
+                    position: static;
+                }
         }
         .card-body{
             background: linear-gradient(-90deg, lightblue, white);
@@ -17,5 +28,20 @@ body{
         .excDest h3{
             text-decoration: underline;
             text-align: center;
+        }
+        .cardsBox{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: center;
+            text-align: center;
+                .card{
+                    align-items: center;
+                }
+        }
+        @media screen and (max-width:800px) {
+            iframe{
+                width: 100%;
+            }
         }
 }
