@@ -37,6 +37,8 @@ body {
       align-items: center; }
   @media screen and (max-width: 800px) {
     body iframe {
+      width: 100%; }
+    body .pagoCuotas img {
       width: 100%; } }
 
 .btn-wsp {
@@ -57,6 +59,16 @@ body {
     text-decoration: none;
     color: #0df053;
     background: #fff; }
+
+.pagoCuotas {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 40px; }
+  .pagoCuotas h4 {
+    font-weight: bolder; }
+
+main {
+  margin-top: 40px; }
 
 .pie-pagina {
   width: 100%;
@@ -110,7 +122,8 @@ body {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
-    padding: 35px 0px; } }
+    padding: 35px 0px;
+    text-align: center; } }
 
 .card-body2 {
   text-align: center; }
@@ -118,6 +131,39 @@ body {
 .card2 {
   border: none;
   padding: 15px; }
+
+label {
+  margin-top: 6px; }
+
+.formContacto {
+  background-color: #ecf0f3;
+  margin: 30px auto;
+  width: 500px;
+  border: 1px solid #b4d8eb;
+  border-radius: 8px; }
+
+.jumbotron {
+  background-color: #ecf0f3;
+  padding: 16px;
+  border-radius: 8px 8px 0px 0px;
+  margin-bottom: 0px; }
+  .jumbotron h3 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: bolder; }
+
+.formContacto {
+  padding: 14px; }
+
+@media screen and (max-width: 800px) {
+  .formContacto {
+    width: 100%; } }
+
+.titOfi h3 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 10px; }
 
 .encabezadoPreviaje .campanaPreviaje {
   text-align: center;
@@ -162,7 +208,7 @@ body {
   grid-column-end: span 4;
   display: flex;
   flex-direction: column;
-  background-color: #3da9e7;
+  background-color: #64b9eb;
   cursor: pointer;
   transition: all 0.3s ease 0s; }
 
@@ -219,5 +265,80 @@ body {
     grid-column-end: span 6; } }
 
 .tituloExc {
+  margin-top: 10px;
   text-align: center;
   text-decoration: underline; }
+
+@media screen and (min-width: 1024px) {
+  .imgQS {
+    max-width: 100%; }
+    .imgQS img {
+      width: 100%;
+      height: 80%; }
+    .imgQS .txtQS {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .imgQS .txtQS h1 {
+        font-size: 30px;
+        color: white;
+        text-shadow: 0 0 8px black; }
+      .imgQS .txtQS p {
+        font-size: 15px;
+        color: white;
+        text-shadow: 0 0 8px black; } }
+
+@media screen and (max-width: 800px) {
+  .imgQS {
+    max-width: 100%;
+    height: 100%; }
+    .imgQS img {
+      width: 100%;
+      height: 80%; }
+    .imgQS .textQS {
+      color: black; } }
+
+.cardMision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px; }
+  .cardMision .card-bodyQS h2 {
+    text-align: center;
+    color: #46a6e6; }
+  .cardMision .card-bodyQS p {
+    text-align: justify; }
+
+.cardVision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px; }
+  .cardVision .card-bodyQS h2 {
+    text-align: center;
+    color: #46a6e6; }
+  .cardVision .card-bodyQS p {
+    text-align: justify; }
+
+.cardValores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px; }
+  .cardValores .card-bodyQS h2 {
+    text-align: center;
+    color: #46a6e6; }
+  .cardValores .card-bodyQS p {
+    text-align: justify; }
+
+.cardRespon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px; }
+  .cardRespon h2 {
+    text-align: center;
+    color: #46a6e6; }
+  .cardRespon p {
+    text-align: justify; }

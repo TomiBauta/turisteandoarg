@@ -16,14 +16,14 @@
         <header>
             <div class="row">
                 <div class="col-lg-12 col-12">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                         <a class="navbar-brand" href="index.html"> <img src="../assets/img/turisteandologo.png" class="d-inline-block align-top" alt="logoBrand"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
+                          <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
                               <a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
@@ -35,8 +35,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="quienes_somos.html">QUIENES SOMOS</a>
                             </li> 
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html   ">CONTACTO</a>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="contacto.html">CONTACTO</a>
                             </li>
                           </ul>
                         </div>
@@ -70,23 +70,37 @@
                     </div><br>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-12 justify-content-center">
-                    <div class="tituloConsulta">
-                        <h3>DEJA AQUI TU CONSULTA</h3>
+                    <div class="formContacto">
+                        <div class="jumbotron">
+                            <h3>DEJÁ AQUÍ TU CONSULTA</h3>
+                        </div>
+                        <div class="fcontacto">
+                            <form method="POSt" name="fcontacto" id="fcontacto" action="./">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="Nombre">Nombre</label>
+                                        <input type="text" class="form-control" name="nombre" id="nombre">
+                                    </div>  
+                                    <div class="col-md-6"> 
+                                        <label for="Apellido">Apellido</label>
+                                        <input type="text" class="form-control" name="apellido" id="apellido">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="Asunto">Asunto</label>
+                                        <input type="text" class="form-control" name="asunto" id="asunto">
+                                        <label for="Consulta">Ingrese su consulta</label>
+                                        <textarea name="Consulta" cols="30" rows="10" class="form-control" id="Consulta"></textarea><br>
+                                        <button class="btn btn-primary">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <form>
-                        <label for="Nombre">Nombre</label>
-                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Tomas">   
-                        <label for="Apellido">Apellido</label>
-                        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Rodriguez">
-                        <label for="Consulta">Ingrese su consulta</label>
-                        <textarea name="Consulta" class="form-control" id="Consulta" placeholder="Ingrese su consulta"></textarea><br>
-                        <button class="btn btn-primary">Enviar</button>
-                    </form>
-                </div>
-            </div><br>
+            <br>
             <div class="row">
+                <div class="col-lg-12 col-12 titOfi">
+                    <h3>NUESTRAS OFICINAS</h3>
+                </div><br>
                 <div class="col-lg-4 col-12">
                     <div class="card2" style="width: 25rem;">
                         <div class="card-body2">

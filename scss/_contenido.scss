@@ -43,6 +43,11 @@ body{
             iframe{
                 width: 100%;
             }
+            .pagoCuotas{
+                img{
+                    width: 100%;
+                }
+            }
         }
 }
 .btn-wsp{
@@ -64,4 +69,15 @@ body{
         color: #0df053;
         background: #fff;
     }
+  }
+  .pagoCuotas{
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 40px;
+      h4{
+          font-weight: bolder;
+      }
+  }
+  main{
+      margin-top: 40px;
   }

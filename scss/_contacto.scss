@@ -7,3 +7,38 @@
     border: none;
     padding: 15px;
 }
+label{
+    margin-top: 6px;
+}
+.formContacto{
+    background-color: #ecf0f3;
+    margin: 30px auto;
+    width: 500px;
+    border: 1px solid #b4d8eb;
+    border-radius: 8px;
+}
+.jumbotron{
+    background-color: #ecf0f3;
+    padding: 16px;
+    border-radius: 8px 8px 0px 0px;
+    margin-bottom: 0px;
+    h3{
+        font-size: 26px;
+        text-align: center;
+        font-weight: bolder;
+    }
+}
+.formContacto{
+    padding: 14px;
+}
+@media screen and (max-width:800px) {
+    .formContacto{
+        width: 100%;
+    }
+}
+.titOfi h3{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
